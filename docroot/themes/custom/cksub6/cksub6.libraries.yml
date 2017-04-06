@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/cksub6.css: {}
+  js:
+    js/cksub6.js: {}

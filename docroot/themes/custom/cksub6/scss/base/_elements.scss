@@ -1,0 +1,139 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+// Headings
+//------------------------------------------
+// h1, h2, h3,
+// h4, h5, h6 {}
+
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+// }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  font-size: 18px;
+}
+
+.btn-transparent-white {
+  background-color: transparent;
+  border: 2px solid $white;
+  font-style: italic;
+  font-weight: bold;
+
+  &:hover {
+    background: $white;
+    border: 2px solid $white;
+    color: $black;
+  }
+}
+
+.btn-transparent-black {
+  background-color: transparent;
+  border: 2px solid $black;
+  color: $black;
+  font-style: italic;
+  font-weight: bold;
+
+  &:hover {
+    background: $black;
+    border: 2px solid $black;
+    color: $white;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.grid5 {
+  float: left;
+  width: 100%;
+
+  @media (min-width: $medium) {
+    width: 20%;
+  }
+}
+
+.section-header {
+  font-size: 2.75rem;
+  line-height: 3.2rem;
+  width: 50%;
+}
+
+.list-style-none{
+  list-style: none;
+  margin-left: 0;
+}
+
+.img-responsive {
+  height: auto;
+  width: 100%;
+}
+
+.full-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  width: 100%;
+
+  .row {
+    margin: 0 auto;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// select {}
+
+//p,
+//a {
+//  font-size: 18px;
+//}

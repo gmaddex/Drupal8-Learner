@@ -1,0 +1,31 @@
+body.section-about {
+  background: url('../images/books.png') no-repeat center top;
+  background-size: cover;
+
+  .sidebar-block{
+    background: transparentize(#d3d3d3,.1);
+    border-radius:6px;
+    padding:3%;
+  }
+
+  img{
+    display:block;
+    margin: 0 auto;
+  }
+
+  #main {
+     background:#E8E8E8;
+     margin-top:15%;
+     padding-bottom: 180px;
+  }
+  .off-canvas-content{
+    background: transparent;
+  }
+  .block-views-block-product-sidebar-block-1{
+    text-align: center;
+    margin-top:67%;
+  }
+  .block-title{
+    font-family: 'Open Sans', sans-serif;
+  }
+}

@@ -1,0 +1,7 @@
+name: Gabe
+description: Gabe's Drupal 8 site
+type: theme
+core: 8.x
+libraries:
+  - gabe/global-css
+  - gabe/global-js

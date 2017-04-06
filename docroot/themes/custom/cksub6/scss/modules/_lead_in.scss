@@ -1,0 +1,18 @@
+.lead-in {
+  .lead-in-wrapper {
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    margin: 4rem auto;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    width: 80%;
+
+    @media (min-width: $medium) {
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

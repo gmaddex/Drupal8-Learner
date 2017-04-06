@@ -1,0 +1,33 @@
+/*wysiwyg styles*/
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+.hero-text{
+  color:white;
+  font-family: 'Arvo', serif;
+  margin-top: 10%;
+  background: transparentize(#d3d3d3,.3);
+  margin-bottom: 0;
+}
+.hero-subtext{
+  color:white;
+  font-family: 'Arvo', serif;
+  margin-bottom: 12%;
+  background: transparentize(#d3d3d3,.3);
+}
+.center-text{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.center-header-text{
+  font-family: 'Raleway', sans-serif;
+  position:relative;
+  width:100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*sitewide styles*/
+body{
+  background:#d3d3d3;
+  font-family: 'Open Sans', sans-serif;
+}

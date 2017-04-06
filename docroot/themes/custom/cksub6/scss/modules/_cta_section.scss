@@ -1,0 +1,52 @@
+.cta-section {
+  padding: 5rem 0 7rem 0;
+
+  @media (min-width: $medium) {
+    padding: 5rem 0;
+  }
+
+  &::after {
+
+    @media (max-width: $medium) {
+      border-bottom: 1px solid $black;
+      content: "";
+      margin: 0 auto;
+      transform: translateY(35px);
+      width: 85%;
+    }
+  }
+
+  img {
+    display: none;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    @media (min-width: $medium) {
+      display: block;
+    }
+  }
+
+  a {
+    display: block;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    width: 80%;
+
+    @media (min-width: $medium) {
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    display: none;
+    font-size: rem-calc(14px);
+    margin: 1.5rem auto 0 auto;
+    width: 80%;
+
+    @media (min-width: $medium) {
+      display: block;
+    }
+  }
+}

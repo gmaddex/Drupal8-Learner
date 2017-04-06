@@ -1,0 +1,46 @@
+body.path-frontpage{
+  background: url('../images/cliffs.jpg') no-repeat center top;
+  background-size: cover;
+
+  .field-node--field-body-1-column{
+    padding-top:5%;
+  }
+  .group-left{
+    background:#484848;
+    padding-bottom:3%;
+    margin-bottom: 2%;
+    // box-shadow: 8px 8px 0px 0px transparentize(#000000,.3);
+  }
+  .group-middle{
+    @extend .group-left;
+  }
+  .group-right{
+    @extend .group-left;
+  }
+  .off-canvas-content{
+    background: transparent;
+  }
+  .large-4 img{
+    display:block;
+    margin: 0 auto;
+  }
+  .text-background-1{
+    background: #b8b8b8;
+    padding:2%;
+    padding-bottom:0%;
+    margin-bottom: 1.5%;
+    box-shadow: 0px 20px 0px 0px #4379D1;
+  }
+  .text-background-2{
+    background: #b8b8b8;
+    padding:2%;
+    padding-bottom:0%;
+    margin-bottom: 2%;
+  }
+  .out-box{
+    background: transparentize(#d3d3d3,.3);
+    padding: 0 2% 0 2%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,132 @@
+// Non-modular or client styles for .l-header region.
+
+.cta-header-wrapper {
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  margin: 0 auto 3.5rem auto;
+  padding: 1rem;
+  width: 80%;
+
+  @media (min-width: 768px) {
+    margin: 0 auto 4rem auto;
+    width: 65%;
+  }
+
+  .cta-header {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 90%;
+
+    @media (min-width: 768px) {
+      font-size: 1.35rem;
+      width: 65%;
+    }
+  }
+}
+
+.top-nav {
+  background: $black;
+  display: none;
+  padding: 0 0 5px 0;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  .logo {
+    border: 3px solid #000000;
+    position: absolute;
+    width: 4%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .vertical {
+    float: right;
+
+    & > li {
+      display: table-cell;
+      a {
+        color: $white;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.lower-nav {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1.25rem 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    top: 39px;
+  }
+
+  .logo {
+    float: left;
+    width: 10%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .vertical {
+    float: right;
+
+    a {
+      color: #4B4440;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.gabe-header {
+  height:60px;
+  background:#484848;
+
+  a{
+    color:white;
+  }
+}
+
+div.gabe-header > div{
+  display:flex;
+  flex-direction:row;
+}
+
+ul.menu{
+  flex:1;
+  display:flex;
+  flex-direction:row;
+  text-align:center;
+  //
+  // li{
+  //   float:right;
+  // }
+  li[role=menuitem]{
+    display:inline-block;
+    flex:1;
+    a{
+      padding-top:7%;
+      height:100%;
+    }
+  }
+}
+
+nav[role=navigation]{
+  flex:1;
+  display:flex;
+  flex-direction:row;
+}
+
+a.is-active{
+  background: transparentize(#d3d3d3,.9);
+}
