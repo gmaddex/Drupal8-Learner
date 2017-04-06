@@ -4211,6 +4211,9 @@ body {
   background: #d3d3d3;
   font-family: 'Open Sans', sans-serif; }
 
+.off-canvas-content {
+  background: transparent; }
+
 footer .footer-top .footer-logo {
   display: block;
   margin: 35px auto; }
@@ -4290,8 +4293,6 @@ body.section-about {
     background: #E8E8E8;
     margin-top: 15%;
     padding-bottom: 180px; }
-  body.section-about .off-canvas-content {
-    background: transparent; }
   body.section-about .block-views-block-product-sidebar-block-1 {
     text-align: center;
     margin-top: 67%; }
