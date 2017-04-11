@@ -4280,7 +4280,7 @@ footer .footer-bottom {
     text-transform: uppercase; }
 
 body.section-about {
-  background: url("../images/books.png") no-repeat center top;
+  background: url("../images/island.jpg") no-repeat center top;
   background-size: cover; }
   body.section-about .sidebar-block {
     background: rgba(211, 211, 211, 0.9);
@@ -4308,7 +4308,8 @@ body.section-products .slick-slide {
 
 body.section-products .callout {
   z-index: -5;
-  border: none; }
+  border: none;
+  background: #afafaf; }
 
 body.section-products .views-row {
   text-align: center; }
@@ -4362,55 +4363,6 @@ body.section-products .product-wrapper {
 
 .node--type-product .off-canvas-content {
   background: #d3d3d3; }
-
-/* Ribbon Styles */
-body.section-products .ribbon {
-  font-size: 16px;
-  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-  width: 50%;
-  position: relative;
-  background: #ba89b6;
-  color: #fff;
-  text-align: center;
-  padding: 1em 2em;
-  /* Adjust to suit */
-  margin: 2em auto 3em;
-  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */ }
-
-body.section-products .ribbon:before, body.section-products .ribbon:after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: -1em;
-  border: 1.5em solid #986794;
-  z-index: -1; }
-
-body.section-products .ribbon:before {
-  z-index: -1;
-  left: -2em;
-  border-right-width: 1.5em;
-  border-left-color: transparent; }
-
-body.section-products .ribbon:after {
-  right: -2em;
-  border-left-width: 1.5em;
-  border-right-color: transparent; }
-
-body.section-products .ribbon .ribbon-content:before, body.section-products .ribbon .ribbon-content:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-style: solid;
-  border-color: #804f7c transparent transparent transparent;
-  bottom: -1em; }
-
-body.section-products .ribbon .ribbon-content:before {
-  left: 0;
-  border-width: 1em 0 0 1em; }
-
-body.section-products .ribbon .ribbon-content:after {
-  right: 0;
-  border-width: 1em 1em 0 0; }
 
 body.path-frontpage {
   background: url("../images/cliffs.jpg") no-repeat center top;
