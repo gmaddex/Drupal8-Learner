@@ -132,11 +132,12 @@ nav[role=navigation]{
   flex-direction:row;
   margin:0 auto;
 }
-section.columns {
-  margin:0 auto;
+section > div > a {
+  text-align:center;
+  display:block;
 }
 
-@media (min-width: 768px) {
+@include breakpoint(medium) {
   div.gabe-header{
     display:flex;
     flex-direction:row;
