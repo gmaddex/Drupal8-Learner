@@ -1,4 +1,6 @@
 body.section-products{
+  background:#ffffff;
+
   .slick-slide{
     bottom:0;
     text-align: center;
@@ -26,6 +28,10 @@ body.section-products{
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .small-background{
+    border-radius:0;
   }
 
 }

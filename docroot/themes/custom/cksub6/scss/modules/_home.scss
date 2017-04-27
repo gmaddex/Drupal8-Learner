@@ -1,26 +1,21 @@
 body.path-frontpage{
-  background: url('../images/cliffs.jpg') no-repeat center top;
+  background: #1b1b1b url('../images/cliffs.jpg') no-repeat center top;
   background-size: cover;
 
   .field-node--field-body-1-column{
     padding-top:5%;
   }
-  .group-left{
+  .medium-4{
     background:#484848;
     padding-bottom:3%;
     margin-bottom: 2%;
+    // width:auto;
     // box-shadow: 8px 8px 0px 0px transparentize(#000000,.3);
-  }
-  .group-middle{
-    @extend .group-left;
-  }
-  .group-right{
-    @extend .group-left;
   }
   .off-canvas-content{
     background: transparent;
   }
-  .large-4 img{
+  .field-item > img{
     display:block;
     margin: 0 auto;
   }
@@ -43,4 +38,49 @@ body.path-frontpage{
     margin-left: 0;
     margin-right: 0;
   }
+  .hero-container{
+    position:relative;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    padding:10%;
+    background: transparentize(#d3d3d3,.3);
+  }
+  .hero-text{
+    text-align: center;
+    color:white;
+    font-family: 'Arvo', serif;
+  }
+
+  .top-angle{
+    position:absolute;
+    top:10px;
+    left:10px;
+    height:50px;
+    width:50px;
+    color:#4379d1;
+    border-style: solid;
+    border-width: 6px 0 0 6px;
+  }
+  .bottom-angle{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    height:50px;
+    width:50px;
+    color:#4379d1;
+    border-style: solid;
+    border-width: 0 6px 6px 0;
+  }
+
+
+
+  // @media only screen and (max-width: 450px){
+  //   .hero-container{
+  //     position:relative;
+  //     margin-top: 5%;
+  //     margin-bottom: 12%;
+  //     padding:10%;
+  //     background: transparentize(#d3d3d3,.3);
+  //   }
+  // }
 }

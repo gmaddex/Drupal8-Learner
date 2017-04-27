@@ -4143,16 +4143,23 @@ table.hover tbody tr:nth-of-type(even):hover {
       font-size: 1.2rem; }
 
 .gabe-header {
-  height: 60px;
   background: #484848; }
   .gabe-header a {
     color: white; }
 
+div.gabe-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 div.gabe-header > div {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 1;
+      flex: 1; }
 
 ul.menu {
   -ms-flex: 1;
@@ -4176,25 +4183,37 @@ nav[role=navigation] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  margin: 0 auto; }
+
+section.columns {
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  div.gabe-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  div.gabe-header > div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex: 1;
+        flex: 1; }
+  nav[role=navigation] {
+    -ms-flex: 1;
+        flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; } }
 
 a.is-active {
   background: rgba(211, 211, 211, 0.1); }
 
 /*wysiwyg styles*/
-.hero-text {
-  color: white;
-  font-family: 'Arvo', serif;
-  margin-top: 10%;
-  background: rgba(211, 211, 211, 0.7);
-  margin-bottom: 0; }
-
-.hero-subtext {
-  color: white;
-  font-family: 'Arvo', serif;
-  margin-bottom: 12%;
-  background: rgba(211, 211, 211, 0.7); }
-
 .center-text {
   font-family: 'Raleway', sans-serif;
   text-align: center; }
@@ -4213,6 +4232,10 @@ body {
 
 .off-canvas-content {
   background: transparent; }
+
+.bottom-bar {
+  color: #e8e8e8;
+  margin-top: 5px; }
 
 footer .footer-top .footer-logo {
   display: block;
@@ -4280,7 +4303,7 @@ footer .footer-bottom {
     text-transform: uppercase; }
 
 body.section-about {
-  background: url("../images/island.jpg") no-repeat center top;
+  background: #1b1b1b url("../images/island.jpg") no-repeat center top;
   background-size: cover; }
   body.section-about .sidebar-block {
     background: rgba(211, 211, 211, 0.9);
@@ -4299,31 +4322,32 @@ body.section-about {
   body.section-about .block-title {
     font-family: 'Open Sans', sans-serif; }
 
-body.section-products .slick-slide {
-  bottom: 0;
-  text-align: center; }
-  body.section-products .slick-slide img {
-    display: block;
-    margin: 0 auto; }
-
-body.section-products .callout {
-  z-index: -5;
-  border: none;
-  background: #afafaf; }
-
-body.section-products .views-row {
-  text-align: center; }
-  body.section-products .views-row img {
-    display: block;
-    margin: 0 auto; }
-
-body.section-products .product-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center; }
+body.section-products {
+  background: #ffffff; }
+  body.section-products .slick-slide {
+    bottom: 0;
+    text-align: center; }
+    body.section-products .slick-slide img {
+      display: block;
+      margin: 0 auto; }
+  body.section-products .callout {
+    z-index: -5;
+    border: none;
+    background: #afafaf; }
+  body.section-products .views-row {
+    text-align: center; }
+    body.section-products .views-row img {
+      display: block;
+      margin: 0 auto; }
+  body.section-products .product-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; }
+  body.section-products .small-background {
+    border-radius: 0; }
 
 .product-individual img {
   display: block;
@@ -4365,17 +4389,17 @@ body.section-products .product-wrapper {
   background: #d3d3d3; }
 
 body.path-frontpage {
-  background: url("../images/cliffs.jpg") no-repeat center top;
+  background: #1b1b1b url("../images/cliffs.jpg") no-repeat center top;
   background-size: cover; }
   body.path-frontpage .field-node--field-body-1-column {
     padding-top: 5%; }
-  body.path-frontpage .group-left, body.path-frontpage .group-middle, body.path-frontpage .group-right {
+  body.path-frontpage .medium-4 {
     background: #484848;
     padding-bottom: 3%;
     margin-bottom: 2%; }
   body.path-frontpage .off-canvas-content {
     background: transparent; }
-  body.path-frontpage .large-4 img {
+  body.path-frontpage .field-item > img {
     display: block;
     margin: 0 auto; }
   body.path-frontpage .text-background-1 {
@@ -4394,3 +4418,31 @@ body.path-frontpage {
     padding: 0 2% 0 2%;
     margin-left: 0;
     margin-right: 0; }
+  body.path-frontpage .hero-container {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    padding: 10%;
+    background: rgba(211, 211, 211, 0.7); }
+  body.path-frontpage .hero-text {
+    text-align: center;
+    color: white;
+    font-family: 'Arvo', serif; }
+  body.path-frontpage .top-angle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    color: #4379d1;
+    border-style: solid;
+    border-width: 6px 0 0 6px; }
+  body.path-frontpage .bottom-angle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    color: #4379d1;
+    border-style: solid;
+    border-width: 0 6px 6px 0; }
