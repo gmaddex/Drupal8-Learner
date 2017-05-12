@@ -18,15 +18,15 @@ services:
     container_name: gabemaddex 
     image: codekoalas/drupal8
     environment:
-      VIRTUAL_HOST: .gabemaddex.com
+      VIRTUAL_HOST: .gabemaddex.dev
       GIT_REPO: https://github.com/gmaddex/drupal8-learner.git
       GIT_BRANCH: master
       MYSQL_SERVER: mysql
       MYSQL_DATABASE: drupal
       MYSQL_USER: mysql
       MYSQL_PASSWORD: mysql
-      DRUPAL_BASE_URL: http://gabemaddex.com
-      DRUPAL_TRUSTED_HOSTS: gabemaddex\.com$$
+      DRUPAL_BASE_URL: http://gabemaddex.dev
+      DRUPAL_TRUSTED_HOSTS: gabemaddex\.dev$$
       DRUPAL_HTTPS: "off"
       APACHE_DOCROOT: /var/www/site/docroot
       PRODUCTION: "true"
